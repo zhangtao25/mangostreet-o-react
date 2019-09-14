@@ -1,15 +1,7 @@
-import React, { Component } from 'react';
-import Button from 'antd/es/button';
-import './App.css';
+// @ts-ignore
+import { renderRoutes } from "react-router-config";
+import routerConfig from './router/router.config'
 
-class App extends Component {
-  render() {
-    return (
-        <div className="App">
-          <Button type="primary">Button</Button>
-        </div>
-    );
-  }
-}
+const App = () => renderRoutes(routerConfig);
 
 export default App;
